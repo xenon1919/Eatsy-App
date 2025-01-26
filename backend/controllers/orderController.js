@@ -26,7 +26,7 @@ const placeOrder = async (req, res) => {
     // Generate line items for the Stripe checkout session
     const line_items = req.body.items.map((item) => ({
       price_data: {
-        currency: "eur",
+        currency: "inr",
         product_data: {
           name: item.name,
         },
