@@ -9,7 +9,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 // Placing User order for frontend
 const placeOrder = async (req, res) => {
-  const frontend_url = "http://localhost:5174"; // Corrected URL (added "//")
+  const frontend_url = "https://eatsy-app-frontend.onrender.com/"; // Corrected URL (added "//")
   try {
     // Create a new order document
     const newOrder = new orderModel({
