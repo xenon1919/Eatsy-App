@@ -38,7 +38,7 @@ const placeOrder = async (req, res) => {
     // Add delivery charges as a separate line item
     line_items.push({
       price_data: {
-        currency: "eur",
+        currency: "inr",
         product_data: {
           name: "Delivery Charges",
         },
